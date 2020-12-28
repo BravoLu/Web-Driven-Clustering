@@ -20,9 +20,10 @@ Learning the discriminative feature representation for the unsupervised vehicle 
 ```shell 
 > git clone https://github.com/BravoLu/Web-Driven-Clustering.git 
 > cd Web-Driven-Clustering
+```
 
 2. Create the env. 
-​```shell
+```shell
 > conda create -n wdc python=3.6
 > source activate wdc 
 > pip install -r requirements.txt 
@@ -39,9 +40,9 @@ Learning the discriminative feature representation for the unsupervised vehicle 
 > ln -s path/to/WebSearchVehicle ./datas/WebSearchVehicle
 > ln -s path/to/VeRi ./datas/VeRi
 > ln -s path/to/VeRi-Wild ./datas/VeRi-Wild
-
+```
 3. Train the baseline.
-​```shell
+```shell
 python train.py --config baseline --gpu 0,1
 ```
 
