@@ -48,7 +48,7 @@ python train.py --config baseline --gpu 0,1
 
 4. Training using web-driven-clustering.
 ```shell
-> python train.py --config web_driven_clustering --gpu 0,1 
+> python train.py --config web-driven-clustering --gpu 0,1 
 ```
 ## Test 
 1. Download the [checkpoint files(password:3914)](https://pan.baidu.com/s/1BhxkbBNHRW1BdCoJeXiZjw). 
