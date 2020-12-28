@@ -51,7 +51,7 @@ python train.py --config baseline --gpu 0,1
 > python train.py --config web_driven_clustering --gpu 0,1 
 ```
 ## Test 
-1. Download the [checkpoint files](). 
+1. Download the [checkpoint files(password:3914)](https://pan.baidu.com/s/1BhxkbBNHRW1BdCoJeXiZjw). 
 
 2. Test.
 ```shell
