@@ -55,7 +55,7 @@ python train.py --config baseline --gpu 0,1
 
 2. Test.
 ```shell
-> python train.py --config web_driven_clustering -t --gpu 0,1 --ckpt /PATH/TO/CHECKPOINT
+> python train.py --config web-driven-clustering -t --gpu 0,1 --ckpt /PATH/TO/CHECKPOINT
 ```
 
 ## Results 
@@ -65,5 +65,5 @@ python train.py --config baseline --gpu 0,1
 |                       | mAP   | rank-1 | rank-5 | rank-10 |
 | --------------------- | ----- | ------ | ------ | ------- |
 | Baseline              | 20.1% | 61.9%  | 76.0%  | 82.0%   |
-| Web-Driven-Clustering | 30.0% | 72.8%  | 81.3%  | 85.3%   |
+| Web-Driven-Clustering | 32.8% | 76.3%  | 85.1%  | 88.8%   |
 

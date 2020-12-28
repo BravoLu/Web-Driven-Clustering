@@ -18,6 +18,7 @@ def parse_args():
     parser.add_argument('-t', '--test', action='store_true', default=False)
     parser.add_argument('-s', '--check', action='store_true', default=False, help="for fast check complie error in program")
     parser.add_argument('--gpu', type=str, default='0')
+    parser.add_argument('--ckpt', type=str, default='')
     args = parser.parse_args()
     print(args)
     return args
@@ -36,6 +37,7 @@ def test(args):
     cfg = load_configs(args.config)
     dataset = get_vehicle_dataloader(cfg, quick_check=args.check)
     model = globals()[cfg['MODEL']]()
+    model.load_param(args.ckpt)
     model = nn.DataParallel(model).cuda()
     evaluator = Evaluator(cfg, model, dataset)
     mAP, cmc = evaluator.evaluate()
